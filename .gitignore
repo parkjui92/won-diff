@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-cli/
+test-results/
+playwright-report/
+.DS_Store
+*.log
+.venv/
+benchmarks/vendor/
+docs/video-work/

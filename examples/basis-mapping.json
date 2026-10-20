@@ -1,0 +1,4 @@
+{
+  "before": {"keys":["항목"],"amount":"금액","unit":"백만원","basis":"settlement","period":"2024 결산","totalKey":["소계"]},
+  "after": {"keys":["항목"],"amount":"금액","unit":"백만원","basis":"budget","period":"2025 예산","totalKey":["소계"]}
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
+<title>won-diff · 한국어 설명 영상</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f4f5ef;color:#173a33;font:17px/1.8 system-ui,sans-serif}main{max-width:1080px;margin:auto;padding:40px 24px}a{color:#06735b;text-underline-offset:4px}nav{display:flex;justify-content:space-between;gap:16px}h1{font-size:clamp(30px,5vw,46px);line-height:1.3;margin:48px 0 16px}.sub{color:#536962}video{display:block;width:100%;max-height:78vh;background:#172923;border-radius:12px;margin:28px 0 16px}article{margin-top:38px;padding:24px 32px;background:#fff;border:1px solid #d7e0d7;border-radius:14px}article h2{font-size:21px;margin:0}article p{margin-bottom:0}.meta{font-size:14px;color:#536962}footer{margin-top:40px;font-size:14px}a:focus-visible,video:focus-visible{outline:3px solid #9c6815;outline-offset:4px}</style>
+</head><body><main>
+<nav><a href="./">₩ won-diff 실행하기</a><a href="https://github.com/parkjui92/won-diff">GitHub 소스·검증 기록 ↗</a></nav>
+<h1>한국어 예산표의 차이,<br>근거까지 확인하는 2분</h1>
+<p class="sub">KIAT 공개자료 비교부터 단위 환산, 기준 경고, 결과 저장까지 실제 화면으로 설명합니다.</p>
+<video controls preload="metadata" poster="./media/screenshot.png"><source src="./media/demo-ko.mp4" type="video/mp4"><track kind="captions" src="./media/demo-ko.vtt" srclang="ko" label="한국어 전체 음성 자막"><p><a href="./media/demo-ko.mp4">MP4 다운로드</a></p></video>
+<p class="meta">1분 59초 · 한국어 합성 음성(Yuna) · 화면 요약 자막 · CC에서 전체 자막 선택</p>
+<p><a href="./media/demo-ko.mp4" download>영상 내려받기</a> · <a href="./won-diff.html" download>오프라인 도구 내려받기</a></p>
+<article><h2>0:00 · 한국어 예산표, 실제 금액의 차이만</h2><p>원디프는 한국어 예산표의 실제 금액 변경을 검토하는 도구입니다. 천 곱하기 백만원은 십억원과 같습니다. 단위만 바뀐 것을 예산이 줄었다고 읽지 않도록, 먼저 원 단위로 맞춥니다.</p></article>
+<article><h2>0:13 · 실제 KIAT 공개자료로 시작</h2><p>공개자료 예제를 누르면, 알리오에 공개된 한국산업기술진흥원의 정부지원수입 표를 불러옵니다. 이천이십삼년과 이천이십사년 결산을 비교합니다. 비교 파일은 같은 원문 값을 억원으로 환산한 사본입니다.</p></article>
+<article><h2>0:28 · 금액 변경 2건 · 표기 변경 1건</h2><p>비교 결과 실제 금액이 바뀐 항목은 두 건입니다. 상세 합계의 차이는 이십팔점 육구억원입니다. 지정한 소계와 상세 합산도 맞는지 대조합니다. 사업의 원인이나 정책 성과를 자동으로 추론하지는 않습니다.</p></article>
+<article><h2>0:43 · 출연금은 줄지 않았습니다</h2><p>표기와 단위만 변경된 항목을 고르면 출연금이 남습니다. 육천팔백이십육 백만원과 육십팔점 이육억원은 같습니다. 근거 버튼에서 원래 값, 셀 주소, 환산식과 파일 해시를 확인할 수 있습니다.</p></article>
+<article><h2>0:58 · 결산과 예산을 섞으면 알립니다</h2><p>회계 기준을 예산으로 바꾸면 이전 결과를 지우고 재검토를 요구합니다. 결산과 예산처럼 기준이 다를 때는 차액만 제시하고 증감률은 계산하지 않습니다. 이 기준은 사용자가 원문을 확인하고 선택합니다.</p></article>
+<article><h2>1:13 · 중복 식별자는 조용히 덮어쓰지 않음</h2><p>이번에는 일부러 같은 식별자를 두 번 넣은 합성 파일입니다. 도구는 뒤의 값으로 덮어쓰지 않고 비교를 중단합니다. 빈 금액과 수식도 확정된 영으로 처리하지 않습니다.</p></article>
+<article><h2>1:26 · 검토 결과와 근거를 함께 저장</h2><p>정상 예제로 돌아와 결과를 저장합니다. 씨에스브이에는 변경표가, 제이슨에는 설정과 파일 해시를 포함한 검토 근거가 담깁니다. 오프라인 파일은 인터넷 연결 없이 엑셀 파일도 비교합니다. 원본 파일은 수정하지 않습니다.</p></article>
+<article><h2>1:42 · 차별점도 같은 입력으로 검증</h2><p>기존 공개 도구 세 가지와 같은 스물네 쌍을 비교했습니다. 원디프는 금액이 같은 표현 변경 열 건을 따로 구분했습니다. 기존 도구도 단위를 전처리하면 같은 결과를 냅니다. 환산과 근거 정리를 한 번에 처리하는 것이 이 도구의 장점입니다.</p></article>
+<footer>개인 개발 도구이며 KIAT의 공식 서비스가 아닙니다. 공시 수치의 발췌·환산 과정과 검증 한계는 GitHub에 공개했습니다.</footer>
+</main></body></html>
